@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import EditUser from '../components/EditUser.jsx';
+
+const userId = Astro.params.id_user;
+
+---
+
+<Layout title="Editar Usuario">
+  <main>
+    <EditUser userId={userId} client:load/>
+  </main>
+</Layout>
